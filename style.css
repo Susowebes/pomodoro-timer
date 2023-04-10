@@ -135,3 +135,39 @@ section {
 .controls #reset {
     display: none;
 }
+
+@media screen and (max-width: 500px) {
+    html, body {
+        height: 600px;
+    }
+
+    section {
+        height: 550px;
+    }
+
+    .container {
+        width: min(42.5rem, 100%);
+        margin-top: 20%;
+        /* margin-inline: auto; */
+        /* padding-inline: 2rem; */
+        display: flex;
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        flex-direction: column;
+        /* gap: 10px; */
+    }
+    
+    .timer {
+        width: 22rem;
+        height: 22rem;
+    }
+    .circle {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .circle::before {
+        width: 95%;
+        height: 95%;
+    }
+}
